@@ -78,6 +78,22 @@
         background: rgba(255, 255, 255, 0.1);
         font-size: 18px;
     }
+
+        @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .boom {
+        font-size: 50px; 
+        font-weight: bold;
+        color: red;
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+        animation: blink 1.5s infinite;
+        margin: 30px 0;
+    }
+
 </style>
 </head>
 <body>
@@ -128,7 +144,7 @@
         <p class="story">
             엄청난 기대를 하며 일주일이 지나고 2주일이 지난 때였나
 
-        <h3>💥 "펑!!!" 💥</h3>
+        <h3 class="boom">💥 !!!펑!!! 💥</h3>
 
         <p class="story">
             저녁시간에 맞선임 침대 밑에서 뻥 소리가 났다.
